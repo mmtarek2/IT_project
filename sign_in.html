@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-    <html lang="en">
+<html lang="en">
     <head>
         <title>Account Page</title>
         <meta charset="UTF-8">
@@ -14,7 +14,7 @@
             }
             
             body {
-                background-color: #f5f5f5;
+                background-color: #382d3d;
             }
             
             .account-page {
@@ -165,70 +165,78 @@
                     padding: 30px 20px;
                 }
             }
-            #cart_img {
-    width: 50px;
-    height: auto;
-}
-.nav {
-    background-color: transparent;
-    padding: 5px;
-    margin: 1.3em;
-    display: inline-block;
-    background-color: #826b8d;
-    width: auto;
-    height: auto;
-    border: none;
-    border-radius: 5px;
-    text-align: center;
-    transition: all 1s 0.2s;
-    color: white;
-}
-#nav {
-    margin: 2em;
-    width: 14em;
-    height: 1.5em;
-    text-align: center;
-    font-weight: bold;
-}
-#cart {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    width: 50px;
-    height: 50px;
-    position:fixed;
-    top: 15px;
-    left: 90%;
-}
 #d1 {
             height: 40em;
             background-color: #382d3d;
             color: white;
             vertical-align: middle;
             align-content: left;
-        }
-
-        #d2 {
+            background-color: #382d3d;
             padding: 2px;
-            margin: 6em;
-            margin-top: 2em;
-            display: inline-block;
-            background-color: transparent;
-            width: 14em;
+            margin: 2em;
+            display: flex;
             height: 1.5em;
             text-align: center;
             font-weight: bold;
+            align-items: center;
+            justify-content: space-between;
         }
+#sign_in{
+  font-size: 125%;
+  padding: 2px;
+  margin: 2em;
+  display: inline-block;
+  width: 4em;
+  height: auto;
+  text-align: center;
+  font-weight: bold;
+  background-color: #382d3d;
+  color: white;
+  vertical-align: middle;
+  text-decoration: none;
+  
+}
+#Register{
+  font-size: 125%;
+  padding: 2px;
+  margin: 2em;
+  display: inline-block;
+  width: 4em;
+  height: auto;
+  text-align: center;
+  font-weight: bold;
+  background-color: #382d3d;
+  color: white;
+  vertical-align: middle;
+  text-decoration: none;
+}
+.cart-button:hover{opacity: 0.8;}
+.buy-button:hover{opacity: 0.8;}
+.cart-button:active{opacity: 0.5;}
+.buy-button:active{opacity: 0.5;}
+#cart {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+}
+
+#cart_img {
+    width: 50px;
+    height: auto;
+}
         </style>
     </head>
     <body>
-        <div name="container1" id="d1">
-            <div id="d2">
-                <a href="home_page.html">
-                <font size="5">The MODERNIST</font>
-                </a>
-                <a id="cart" href="cart_page.html"><img src="https://cdn-icons-png.flaticon.com/128/12588/12588590.png" id="cart_img"></a>
-            </div>
+    <div id="d1">
+        <a href="home_page.html" target="_blank" style="color:white; font-size: 200%; text-decoration: none;">
+            <span>The MODERNIST<br/>for design</span>
+        </a>
+        <a href="sign_in.html" id="sign_in" target="_blank">Sign In</a>
+        <a href="sign_in.html" id="Register" target="_blank">Register</a>
+        <a id="cart" href="cart_page.html"><img src="https://cdn-icons-png.flaticon.com/128/12588/12588590.png" id="cart_img" ></a>
+    </div>
         <div class="account-page">
             <div class="container">
                 <div class="row">
